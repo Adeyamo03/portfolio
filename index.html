@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Samuel Esan | Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header class="container header">
+      <a class="logo" href="#">SE</a>
+
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <div>
+          <h1>Samuel Esan</h1>
+          <p class="subtitle">
+            Computer/Data Science senior → building skills in software, data, and engineering tools.
+          </p>
+
+          <div class="buttons">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn" href="assets/Resume-Samuel-Esan.pdf" target="_blank" rel="noreferrer">Resume</a>
+          </div>
+
+          <div class="links">
+            <a href="https://github.com/Adeyamo03" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/samuel-esan-316906399/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="mailto:samo.esan44@gmail.com">Email</a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <h3>Currently</h3>
+          <ul>
+            <li>NFL Combine Sports Analysis/Ranking Database</li>
+            <li>Learning: More languages, 3D modeling</li>
+            <li>Interests: Game Design, Data Manuipilation, Software Engineering</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <h2>About</h2>
+        <p>
+          I'm a senior Computer/Data Science student interested in Data Science, Software Development, and Machine Learning. I enjoy learning new skills 
+          and coding. I like projects that blend data science and software development.
+        </p>
+      </section>
+
+      <section id="projects" class="section">
+        <h2>Projects</h2>
+
+        <div class="grid">
+          <article class="card">
+            <h3>Portfolio Website</h3>
+            <p>Responsive personal site with projects, skills, and contact info.</p>
+            <div class="card-links">
+              <a href="https://github.com/Adeyamo03/portfolio" target="_blank" rel="noreferrer">Code</a>
+              <a href="#" target="_blank" rel="noreferrer">Live</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Project Placeholder</h3>
+            <p>To be Determined.</p>
+            <div class="card-links">
+              <a href="#" target="_blank" rel="noreferrer">Code</a>
+              <a href="#" target="_blank" rel="noreferrer">Live</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <h2>Skills</h2>
+        <div class="pill-row">
+          <span class="pill">Python</span>
+          <span class="pill">SQL</span>
+          <span class="pill">C++</span>
+          <span class="pill">Bash/R</span>
+          <span class="pill">Excel</span>
+          <span class="pill">HTML/CSS</span>
+          <span class="pill">Git/GitHub</span>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <h2>Contact</h2>
+        <p>
+          Want to connect? Email me at <a href="mailto:samo.esan44@gmail.com">samo.esan44@gmail.com</a>.
+        </p>
+
+        <form class="contact-form" onsubmit="return false;">
+          <label>
+            Name
+            <input id="name" type="text" placeholder="Your name" />
+          </label>
+
+          <label>
+            Message
+            <textarea id="message" rows="4" placeholder="Your message"></textarea>
+          </label>
+
+          <button class="btn primary" id="copyBtn">Copy message template</button>
+          <p class="hint" id="hint"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="container footer">
+      <p>© <span id="year"></span> Samuel Esan</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
